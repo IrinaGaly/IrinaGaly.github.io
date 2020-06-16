@@ -1,0 +1,31 @@
+.section__order {
+  background: url('/images/паттерн.png') center center / 100%;
+}
+
+.title__order {
+  margin-bottom: 55px;
+  color: $darkGreen;
+}
+
+.section__order {
+  position: relative;
+  
+  &::before {
+    content: url('/images/berry1.png');
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    bottom: 8%;
+    left: 3%;
+  }
+
+    &::after {
+      content: url('/images/list4.png');
+      width: 135px;
+      height: 188px;
+      position: absolute;
+      right: 0;
+      bottom: 8%;
+    }
+
+}

@@ -1,0 +1,11 @@
+.becauses__section {
+  position: relative;
+  background: url('/images/узор\ лист.png') left top 57% no-repeat;
+
+    &:before {
+      content: url("/images/батончик\ малина.png");
+      position: absolute;
+      bottom: -80px;
+      left: 0;
+    }
+}

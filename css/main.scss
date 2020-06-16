@@ -1,0 +1,34 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+// 
+$z-fixed-menu: 100;
+
+//normalize
+@import url("/css/normalize.css");
+
+//setup
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import "layout";
+
+//components 
+@import "components/hero";
+@import "components/header";
+@import "components/badges";
+@import "components/btn";
+@import "components/section";
+@import "components/headline";
+@import "components/becauses";
+@import "components/because";
+@import "components/becauses-section";
+@import "components/rewievs";
+@import "components/interactive-feedback";
+@import "components/rewievs-section";
+@import "components/section-order";
+@import "components/form";
+@import "components/radio";
+@import "components/fixed-menu";
