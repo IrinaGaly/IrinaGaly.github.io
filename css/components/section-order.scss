@@ -1,5 +1,5 @@
 .section__order {
-  background: url('/images/паттерн.png') center center / 100%;
+  background: url('./images/паттерн.png') center center / 100%;
 }
 
 .title__order {
@@ -11,7 +11,7 @@
   position: relative;
   
   &::before {
-    content: url('/images/berry1.png');
+    content: url('./images/berry1.png');
     width: 47px;
     height: 48px;
     position: absolute;
@@ -20,7 +20,7 @@
   }
 
     &::after {
-      content: url('/images/list4.png');
+      content: url('./images/list4.png');
       width: 135px;
       height: 188px;
       position: absolute;

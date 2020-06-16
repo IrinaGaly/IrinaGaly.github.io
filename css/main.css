@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("/css/normalize.css");
+@import url("./css/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 html,
 body {
@@ -71,7 +71,7 @@ footer {
 }
 
 .hero {
-  background: url("/images/Батончики.png") left 78% center no-repeat, url("/images/узор.png") right bottom no-repeat;
+  background: url("./images/Батончики.png") left 78% center no-repeat, url("./images/узор.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
   min-height: 650px;
@@ -79,13 +79,13 @@ footer {
   position: relative;
 }
 .hero::after {
-  content: url("/images/Лист 3.png");
+  content: url("./images/Лист 3.png");
   position: absolute;
   bottom: -40px;
   left: 2%;
 }
 .hero::before {
-  content: url("/images/CompositeLayer.png");
+  content: url("./images/CompositeLayer.png");
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -254,7 +254,7 @@ footer {
   position: relative;
 }
 .becauses__item:before {
-  content: url("/icons/separator.png");
+  content: url("./icons/separator.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -303,10 +303,10 @@ footer {
 
 .becauses__section {
   position: relative;
-  background: url("/images/узор лист.png") left top 57% no-repeat;
+  background: url("./images/узор лист.png") left top 57% no-repeat;
 }
 .becauses__section:before {
-  content: url("/images/батончик малина.png");
+  content: url("./images/батончик малина.png");
   position: absolute;
   bottom: -80px;
   left: 0;
@@ -319,7 +319,7 @@ footer {
 }
 
 .rewievs__display {
-  background: #f8faf9 url("/images/веточка.png") right top no-repeat;
+  background: #f8faf9 url("./images/веточка.png") right top no-repeat;
   padding: 50px 45px 34px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -413,24 +413,24 @@ footer {
 }
 
 .rewievs__section {
-  background: url("/images/Узор2-1.png") left bottom -10% no-repeat;
+  background: url("./images/Узор2-1.png") left bottom -10% no-repeat;
   position: relative;
 }
 .rewievs__section:before {
-  content: url("/images/Ягоды2-2.png");
+  content: url("./images/Ягоды2-2.png");
   position: absolute;
   bottom: -10px;
   left: 0;
 }
 .rewievs__section:after {
-  content: url("/images/Ягода2-1.png");
+  content: url("./images/Ягода2-1.png");
   position: absolute;
   right: 0;
   top: 20%;
 }
 
 .section__order {
-  background: url("/images/паттерн.png") center center/100%;
+  background: url("./images/паттерн.png") center center/100%;
 }
 
 .title__order {
@@ -442,7 +442,7 @@ footer {
   position: relative;
 }
 .section__order::before {
-  content: url("/images/berry1.png");
+  content: url("./images/berry1.png");
   width: 47px;
   height: 48px;
   position: absolute;
@@ -450,7 +450,7 @@ footer {
   left: 3%;
 }
 .section__order::after {
-  content: url("/images/list4.png");
+  content: url("./images/list4.png");
   width: 135px;
   height: 188px;
   position: absolute;
@@ -544,7 +544,7 @@ footer {
   border-radius: 0;
 }
 .radio .radio__visible_checkbox::before {
-  content: url("/icons/checkmark.svg");
+  content: url("./icons/checkmark.svg");
   background: white;
   transform: translate(-50%, -90%);
 }
@@ -583,7 +583,7 @@ footer {
   background: white;
   border-radius: 50%;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
