@@ -1,5 +1,5 @@
 .hero {
-  background: url("./images/Батончики.png") left 78% center no-repeat, url("./images/узор.png") right bottom no-repeat;
+  background: url("../images/Батончики.png") left 78% center no-repeat, url("../images/узор.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: 650px;
@@ -7,14 +7,14 @@
   position: relative;
 
   &::after {
-    content: url('./images/Лист\ 3.png');
+    content: url('../images/Лист\ 3.png');
     position: absolute;
     bottom: -40px;
     left: 2%;
   }
 
   &::before {
-    content: url('./images/CompositeLayer.png');
+    content: url('../images/CompositeLayer.png');
     position: absolute;
     bottom: -40px;
     right: 0;

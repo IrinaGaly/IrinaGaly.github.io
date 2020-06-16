@@ -1,16 +1,16 @@
 .rewievs__section {
-  background: url('./images/Узор2-1.png') left bottom -10% no-repeat;
+  background: url('../images/Узор2-1.png') left bottom -10% no-repeat;
   position: relative;
 
     &:before {
-      content: url('./images/Ягоды2-2.png');
+      content: url('../images/Ягоды2-2.png');
       position: absolute;
       bottom: -10px;
       left: 0;
     }
 
     &:after {
-      content: url('./images/Ягода2-1.png');
+      content: url('../images/Ягода2-1.png');
       position: absolute;
       right: 0;
       top: 20%;
