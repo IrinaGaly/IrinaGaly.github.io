@@ -2,37 +2,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .rewievs__display {
   background: #f8faf9 url('../images/веточка.png') right top no-repeat;
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: white;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
     
 }
 
 .rewievs__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+.rewievs__display_active {
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.rewievs__display-inner_deactive {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+
+}
 .rewievs__feedback {
-  width: 245px;
-  height: 260px;
+  width: rem(245px);
+  height: rem(260px);
+
+    @include tablets {
+      width: rem(133px);
+      height: rem(135px);
+      margin-bottom: rem(32px);
+    }
 }
 
 .rewievs__avatar-img {
@@ -43,21 +70,25 @@
 }
 .rewievs__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .rewievs__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: black;
 }
 
 .rewievs__text {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
 }
 .rewievs__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: black;
 }

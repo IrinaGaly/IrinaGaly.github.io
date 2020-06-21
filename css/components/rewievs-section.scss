@@ -1,19 +1,31 @@
 .rewievs__section {
-  background: url('../images/Узор2-1.png') left bottom -10% no-repeat;
+  
   position: relative;
 
+
+
     &:before {
-      content: url('../images/Ягоды2-2.png');
+      content: url('../images/leaves3-2.png');
       position: absolute;
-      bottom: -10px;
+      bottom: -15%;
       left: 0;
+      z-index: 5;
+
+    @include tablets {
+      bottom: -21%;
+      content: url('../images/CompositeLayer-rewiev.png')
+      }
     }
 
     &:after {
       content: url('../images/Ягода2-1.png');
       position: absolute;
       right: 0;
-      top: 20%;
+      top: 10%;
+
+      @include tablets {
+        top: -9%;
+      }
     }
 }
 

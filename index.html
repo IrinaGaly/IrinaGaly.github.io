@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Comartible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/main.css">
   <title>CHOCCO</title>
 </head>
@@ -25,11 +25,20 @@
                 <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
               </ul>
             </nav>
-            <a href="tel: +78009039090" class="phone-number">
+            <a href="tel: +78009039090" class="phone-number header__phone-number_up">
               <span class="phone-number__icon">
-                <img src="./icons/phone.svg" class="phone-number__icon" alt="phone icon">
+                <svg class="phone-icon">
+                  <use xlink:href="./icons/sprite.svg#phone"></use>
+                </svg>
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="#" class="gamburger__link">
+              <span class="gamburger">
+                <svg class="gamburger-icon">
+                  <use xlink:href="./icons/sprite.svg#gamburger"></use>
+                </svg>
+              </span>
             </a>
           </header>
           <div class="hero__title-section">
@@ -40,18 +49,27 @@
           <div class="hero__badges-section">
             <ul class="badges__list badge">
               <li class="badges__item badge">
-                <div class="badge__icon">
-                  <img src="./icons/5.svg" alt=""></div>
+                <span class="badge__icon"> 
+                  <svg class="leaf-icon badge__icons">
+                    <use xlink:href="./icons/sprite.svg#leaf"></use>
+                  </svg>
+                </span>
                 <div class="badge__text">100% натуральный продукт</div>
               </li>
               <li class="badges__item badge">
-                <div class="badge__icon">
-                  <img src="./icons/6.svg" alt=""></div>
+                <span class="badge__icon"> 
+                  <svg class="car-icon badge__icons">
+                    <use xlink:href="./icons/sprite.svg#car"></use>
+                  </svg>
+                </span>
                 <div class="badge__text">3-5 дней доставка по РФ</div>
               </li>
               <li class="badges__item badge">
-                <div class="badge__icon">
-                  <img src="./icons/4.svg" alt=""></div>
+                <span class="badge__icon"> 
+                  <svg class="metr-icon badge__icons">
+                    <use xlink:href="./icons/sprite.svg#metr"></use>
+                  </svg>
+                </span>
                 <div class="badge__text">Не портит фигуру</div>
               </li>
             </ul>
@@ -69,7 +87,11 @@
             <li class="becauses__item because">
               <div class="because__image">
                 <div class="because__image-wrapper">
-                  <img src="./icons/1.svg" alt="" class="because__icon">
+                  <span class="because__icon"> 
+                    <svg class="happy-icon because__icons">
+                      <use xlink:href="./icons/sprite.svg#happy"></use>
+                    </svg>
+                  </span>
                 </div>
               </div>
               <div class="because__text">
@@ -85,7 +107,11 @@
             <li class="becauses__item because">
               <div class="because__image">
                 <div class="because__image-wrapper">
-                  <img src="./icons/3.svg" alt="" class="because__icon">
+                  <span class="because__icon"> 
+                    <svg class="inlove-icon because__icons">
+                      <use xlink:href="./icons/sprite.svg#inlove"></use>
+                    </svg>
+                  </span>
                 </div>
               </div>
               <div class="because__text">
@@ -101,7 +127,11 @@
             <li class="becauses__item because">
               <div class="because__image">
                 <div class="because__image-wrapper">
-                  <img src="./icons/2.svg" alt="" class="because__icon">
+                  <span class="because__icon"> 
+                    <svg class="strong-icon because__icons">
+                      <use xlink:href="./icons/sprite.svg#strong"></use>
+                    </svg>
+                  </span>
                 </div>
               </div>
               <div class="because__text">
@@ -121,8 +151,8 @@
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="rewievs">
-            <div class="rewievs__display">
-              <div class="rewievs__display-inner">
+            <div class="rewievs__display rewievs__display_active">
+              <div class="rewievs__display-inner rewievs__display-inner_active">
                 <div class="rewievs__feedback">
                   <img src="./images/alena.png" alt="" class="rewievs__avatar-img">
                 </div>
@@ -139,9 +169,26 @@
                   </div>
                 </article>
               </div>
+            </div> 
+            <div class="rewievs__display rewievs__display-inner_deactive">
+              <div class="rewievs__display-inner">
+                <div class="rewievs__feedback">
+                  <img src="./images/ginger.png" alt="" class="rewievs__avatar-img">
+                </div>
+                <article class="rewievs__content">
+                  <h3 class="rewievs__title">Лучшие батончики  премиум уровня </h3>
+                  <div class="rewievs__text">
+                    <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус. 
+                      </p>
+                  </div>
+                  <div class="rewievs__author">
+                    Мария Орлова
+                  </div>
+                </article>
+              </div>
             </div>
             <ul class="rewievs__switcher">
-              <li class="rewievs__switcher-item interactive-feedback">
+              <li class="rewievs__switcher-item interactive-feedback interactive-feedback_active">
                 <a href="#" class="interactive-feedback-link">
                   <img src="./images/alena.png" alt="" class="interactive-feedback__avatar">
                 </a>
@@ -234,6 +281,47 @@
           </form>
         </div>
       </section>
+      <section class="section section__map">
+        <div class="map">
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer__container">
+          <addres class="footer__addres">
+            <div class="footer__text">Москва, ул.Новый Арбат, д.31/12</div>
+            <a href="tel: +78009039090" class="phone-number footer__phone-number_down">
+              <span class="phone-number__icon">
+                <svg class="phone-icon_footer">
+                  <use xlink:href="./icons/sprite.svg#phone"></use>
+                </svg>
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+          </addres>
+          <div class="footer__social social">
+            <span class="social__icon"> 
+              <svg class="vk-icon social__icons">
+                <use xlink:href="./icons/sprite.svg#vk"></use>
+              </svg>
+            </span>
+            <span class="social__icon"> 
+              <svg class="fb-icon social__icons">
+                <use xlink:href="./icons/sprite.svg#fb"></use>
+              </svg>
+            </span>
+            <span class="social__icon"> 
+              <svg class="ig-icon social__icons">
+                <use xlink:href="./icons/sprite.svg#ig"></use>
+              </svg>
+            </span>
+            <span class="social__icon"> 
+              <svg class="tw-icon social__icons">
+                <use xlink:href="./icons/sprite.svg#tw"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
   </div>  
   <nav class="fixed-menu">

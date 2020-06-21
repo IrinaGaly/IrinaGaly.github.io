@@ -2,11 +2,13 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 22px;
+  margin-right: rem(22px);
+  margin-bottom: 6px;
+
     &:last-child {
       margin-right: 0;
+      margin-bottom: 0;
     }
-
 
      &__elem {
       display: none;
@@ -19,16 +21,16 @@
       } 
 
       &__visible {
-          width: 26px;
-          height: 26px;
+          width: rem(26px);
+          height: rem(26px);
           position: relative;
           border-radius: 50%;
           background: white;
     
         &:before {
           content: "";
-          width: 14px;
-          height: 14px;
+          width: rem(14px);
+          height: rem(14px);
           background: #365a49;
           border-radius: 50%;
           position: absolute;
@@ -39,17 +41,9 @@
         }
       }
      
-       .radio__visible_checkbox {
-       border-radius: 0;
-
-        &::before {
-          content: url("../icons/checkmark.svg");
-          background: white;
-          transform: translate(-50%, -90%);
-        }
-      }
+      
         &__visible {
-          margin-right: 9px;
+          margin-right: rem(9px);
 
           &:last-child {
             margin-right: 0;
@@ -57,3 +51,13 @@
         }
    }
 
+   .radio__visible_checkbox {
+    border-radius: 0;
+
+     &::before {
+       content: url("../icons/checkmark.svg");
+       transform: translate(-50%, -90%);
+       background: white;
+     }
+   
+    }

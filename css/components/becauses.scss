@@ -1,5 +1,22 @@
 .becauses {
   display: flex;
+ 
+
+  @include phones {
+    flex-direction: column;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .becauses__item {
@@ -7,25 +24,32 @@
   padding: 0 3%;
   position: relative;
 
-    &:before {
-      content: url('../icons/separator.png');
+   &:last-child {
+     &:before {
+       content: none;
+     }
+   }
+  }
+
+
+  .becauses__item:before {
+      content: url('../images/separator.png');
       position: absolute;
-      top: 30px;
+      top: rem(30px);
       right: 0;
       transform: translateX(50%);
-    }
 
-    &:first-child {
-      padding-left: 0;
-    }
 
-    &:last-child {
-      padding-right: 0;
+      @include tablets {
+          display: none;
+        }
 
-      &:before {
-        display: none;
+        @include phones {
+            display: none;
+        }
       }
-    }
+    
+    
 
     
-}
+

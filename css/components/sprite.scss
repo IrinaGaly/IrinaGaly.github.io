@@ -1,0 +1,57 @@
+.phone-number__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-icon {
+  fill: white;
+  width: 12px;
+  height: 12px;
+}
+
+
+.badge__icons {
+  fill: white;
+  width: 44px;
+  height: 42px;
+}
+
+.gumburger {
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.gamburger-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  display: none;
+  
+  @include tablets {
+    display: inline-flex;
+    }
+}
+
+.because__icons {
+  width: rem(75px);
+  height: rem(69px);
+  fill: #2E2E2D;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone-icon_footer {
+  fill: #365A49;
+}
+
+.social__icons {
+  fill: #aaa9a9;
+
+   &:hover {
+     fill: black;
+   }
+}

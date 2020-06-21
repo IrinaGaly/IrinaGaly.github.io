@@ -1,10 +1,15 @@
 .interactive-feedback {
-  width: 80px;
-  height: 80px;
-  border: 6px solid #0f5a47;
+  width: rem(80px);
+  height: rem(80px);
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  border: none;
+}
+
+.interactive-feedback_active {
+  border: rem(6px) solid #0f5a47;
+  border-radius: 50%;
 }
 
 .interactive-feedback__link {
@@ -28,7 +33,7 @@
   flex-direction: row;
 }
 .rewievs__switcher-item {
-  margin-right: 8px;
+  margin-right: rem(8px);
 
   &:last-child {
     margin-right: 0;
