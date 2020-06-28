@@ -1,0 +1,28 @@
+@include tablets {
+.nav-gamburger {
+  //display: none;
+  background: rgb(52, 55, 57);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: rem(146px) rem(149px);
+  font-size: rem (16px);
+}
+  .nav-close {
+    background: url('/icons/close.svg');
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 3%;
+    right: 5%;
+    
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+}
+}

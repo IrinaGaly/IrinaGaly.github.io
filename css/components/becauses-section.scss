@@ -15,6 +15,7 @@
       position: absolute;
       bottom: rem(-80px);
       left: 0;
+      z-index: 5;
 
       @include tablets {
         bottom: rem(-180px);

@@ -1,0 +1,112 @@
+.menu-title {
+  color: white;
+  
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+}
+.menu-interactive {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu__left-side {
+  background: url('/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png') top center / 100% no-repeat;
+  transform: rotate(-90deg);
+  height: 100%;
+  width: 101 rem(px);
+}
+
+
+#reseaux_sociaux {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* ACCORDEON RESEAUX SOCIAUX */
+
+.accordeon {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  background: transparent;
+}
+/* Taille des onglets fermés */
+.accordeon .link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  float: left;
+  width: 10%;
+  height: 100%;
+  color: #aaa;
+  background: url('/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png') top center / 100% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.accordeon .link:last-child {
+  border-right: 0;
+}
+
+.accordeon .link.hovered {
+  width: 70%;
+  background-color: #eaeaea;
+}
+
+.accordeon .link.hovered .prev {
+  opacity: 0;
+}
+
+.accordeon .link img {
+  filter: brightness(0%);
+}
+
+.accordeon .link:not(.hovered) .full_content {
+  opacity: 0;
+}
+
+.accordeon .link .full_content {
+  position: absolute;
+  top: 22px;
+  left: 100px;
+  text-transform: uppercase;
+}
+
+.accordeon .link .full_content img {
+  width:50px;
+}
+
+.accordeon .link .prev {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  transition: 0.3s ease;
+  padding: 25px 10px;
+}
+
+.accordeon .link .prev > span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+
+
+

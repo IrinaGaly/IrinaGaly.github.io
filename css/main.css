@@ -462,6 +462,7 @@ footer {
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
+  z-index: 5;
 }
 @media screen and (max-width: 769px) {
   .becauses__section:before {
@@ -838,7 +839,7 @@ footer {
   border-color: white;
 }
 .fixed-menu__link {
-  width: 16px;
+  width: 0.8888888889rem;
   height: 16px;
   border-radius: 50%;
   border: 1px solid transparent;
@@ -958,6 +959,12 @@ footer {
   fill: black;
 }
 
+.chocolate {
+  width: 2.8333333333rem;
+  height: 2.8333333333rem;
+  fill: white;
+}
+
 .social {
   display: flex;
   flex-direction: row;
@@ -973,4 +980,304 @@ footer {
   width: 1.1111111111rem;
   height: 1.1111111111rem;
   margin-right: 1.1111111111rem;
+}
+
+.menu-title {
+  color: white;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-interactive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu__left-side {
+  background: url("/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
+  transform: rotate(-90deg);
+  height: 100%;
+  width: 101 px/18px0rem;
+}
+
+#reseaux_sociaux {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* ACCORDEON RESEAUX SOCIAUX */
+.accordeon {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+  background: transparent;
+}
+
+/* Taille des onglets fermés */
+.accordeon .link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  float: left;
+  width: 10%;
+  height: 100%;
+  color: #aaa;
+  background: url("/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.accordeon .link:last-child {
+  border-right: 0;
+}
+
+.accordeon .link.hovered {
+  width: 70%;
+  background-color: #eaeaea;
+}
+
+.accordeon .link.hovered .prev {
+  opacity: 0;
+}
+
+.accordeon .link img {
+  filter: brightness(0%);
+}
+
+.accordeon .link:not(.hovered) .full_content {
+  opacity: 0;
+}
+
+.accordeon .link .full_content {
+  position: absolute;
+  top: 22px;
+  left: 100px;
+  text-transform: uppercase;
+}
+
+.accordeon .link .full_content img {
+  width: 50px;
+}
+
+.accordeon .link .prev {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  transition: 0.3s ease;
+  padding: 25px 10px;
+}
+
+.accordeon .link .prev > span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.section-menu {
+  background: url("/images/картинка.png") 100% 100% no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .nav-gamburger {
+    background: #343739;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 8.1111111111rem 8.2777777778rem;
+    font-size: rem 16px;
+  }
+
+  .nav-close {
+    background: url("/icons/close.svg");
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 3%;
+    right: 5%;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 769px) {
+  .bar {
+    flex-direction: column;
+    padding: 10% 8%;
+  }
+}
+
+.right-bar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.6666666667rem;
+}
+@media screen and (max-width: 769px) {
+  .right-bar {
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.left-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 769px) {
+  .left-bar {
+    width: auto;
+  }
+}
+
+.left-bar__img {
+  min-width: 26.3333333333rem;
+  min-height: 23.5555555556rem;
+}
+
+.price {
+  font-size: 3.3333333333rem;
+  margin-right: 1.6666666667rem;
+  color: black;
+}
+
+.info__item {
+  margin-right: 3rem;
+}
+@media screen and (max-width: 769px) {
+  .info__item {
+    margin-bottom: 0;
+  }
+}
+
+.right-ship-icon {
+  width: 0.8888888889rem;
+  height: 1.6111111111rem;
+}
+
+.right-bar__icon {
+  background: url("/images/blue.png");
+  width: 91px;
+  height: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.6666666667rem;
+}
+.right-bar__icon:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 769px) {
+  .right-bar__icon {
+    display: block;
+    display: none;
+  }
+}
+
+.left-ship-icon {
+  width: 0.8888888889rem;
+  height: 1.6111111111rem;
+  transform: rotate(180deg);
+  margin-right: 2.6666666667rem;
+}
+
+.left__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+}
+
+.title-bar {
+  font-size: 2rem;
+  flex: 1;
+  margin-bottom: 1.2222222222rem;
+  text-align: start;
+}
+@media screen and (max-width: 769px) {
+  .title-bar {
+    font-size: 1.6666666667rem;
+  }
+}
+
+.right-bar__desc {
+  margin-bottom: 2.3888888889rem;
+}
+
+.cocolate__desc {
+  color: white;
+}
+
+.info__item {
+  margin-bottom: 3.9444444444rem;
+}
+
+.right-bar__info {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-bar-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+}
+
+.section-bars {
+  position: relative;
+  background: #F8FAF9;
+}
+
+.section-bars::before {
+  content: url("/images/leaf-berry.png");
+  position: absolute;
+  height: 25.1666666667rem;
+  width: 10.8888888889rem;
+  right: 0;
+  bottom: -14%;
+  z-index: 5;
 }

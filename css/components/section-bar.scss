@@ -1,0 +1,14 @@
+.section-bars {
+  position: relative;
+  background: #F8FAF9;
+}
+
+.section-bars::before {
+  content: url('/images/leaf-berry.png');
+  position: absolute;
+  height: rem(453px);
+  width: rem(196px);
+  right: 0;
+  bottom: -14%;
+  z-index: 5;
+}
