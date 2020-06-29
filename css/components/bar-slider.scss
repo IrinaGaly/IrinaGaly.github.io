@@ -6,12 +6,17 @@
     flex-direction: column;
     padding: 10% 8%;
   }
+
+  @include phones {
+    padding: rem(85px) 0 rem(112px) 0;
+  }
 }
 .right-bar {
   width: 50%;
   display: flex;
   flex-direction: column;
   margin-left: rem(66px);
+  position: relative;
 
   @include tablets {
     width: auto;
@@ -30,32 +35,27 @@
 
   @include tablets {
     width: auto;
+    margin-bottom: rem(28px);
   }
 }
 
 .left-bar__img {
   min-width: rem(474px);
   min-height: rem(424px);
-}
-
-.price {
-  font-size: rem(60px);
-  margin-right: rem(30px);
-  color: black;
-}
-.info__item {
-  margin-right: rem(54px);
 
   @include tablets {
-    margin-bottom: 0;
+    width: rem(370px);
+    height: rem(337px);
+    object-fit: cover;
+  }
+
+  @include phones {
+    width: rem(370px);
+    height: rem(304px);
+    object-fit: cover;
   }
 }
 
-.right-ship-icon {
-  width: rem(16px);
-  height: rem(29px);
-  
-}
 .right-bar__icon {
   background: url('/images/blue.png');
   width: 91px;
@@ -65,6 +65,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: rem(48px);
+  position: relative;
+
    &:hover {
      cursor: pointer;
    }
@@ -74,23 +76,8 @@
      display: none;
    }
 }
-.left-ship-icon {
-  width: rem(16px);
-  height: rem(29px);
-  transform: rotate(180deg);
-  margin-right: rem(48px);
-  // margin-left: rem(48px);
- 
-}
-
-.left__image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: -10%;
-  
+.cocolate__desc {
+  color: white;
 }
 
 .title-bar {
@@ -101,37 +88,42 @@
 
   @include tablets {
     font-size: rem(30px);
+    text-align: center;
   }
 }
 
-  
-  
 .right-bar__desc {
   margin-bottom: rem(43px);
+
+  @include phones {
+    padding: 0 rem(55px);
+  }
 }
-.cocolate__desc {
-  color: white;
+
+.info__list {
+  display: flex;
+  flex-direction: row;
 }
+
 .info__item {
-  margin-bottom: rem(71px);
+  margin: 0 rem(55px) rem(52px) 0;
+
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
 }
-.right-bar__info {
-  display: flex;
-  flex-direction: row;
+.weight {
+  font-weight: bold;
+  color: black;
 }
-.right-bar-price {
+
+.bar-price {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.right__image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top:50%;
-  right: -10%;
-  
+.bar-price__money {
+  font-size: rem(60px);
+  margin-right: rem(30px);
+  color: black;
 }
-
-

@@ -150,14 +150,14 @@
       </section>
       <section class="section section-bars">
         <div class="container">
-          <div class="left__image-wrapper">
-            <span class="left__icon"> 
-              <svg class="left-ship-icon">
-                <use xlink:href="./icons/sprite.svg#ship"></use>
-              </svg>
-            </span>
-          </div>
           <div class="bar">
+            <div class="left__ship-wrapper">
+              <span class="left__icon"> 
+                <svg class="left-ship-icon">
+                  <use xlink:href="./icons/sprite.svg#ship"></use>
+                </svg>
+              </span>
+            </div>
             <div class="left-bar">
               <img src="/images/barl-ist.png" alt="bar" class="left-bar__img">
             </div>
@@ -169,34 +169,104 @@
                   </svg>
                 </span>
                 <div class="cocolate__desc">Состав</div>
+                <div class="composition">
+                  <div class="composition-inner">
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="grap composition__icon">
+                            <use xlink:href="./icons/sprite.svg#grape"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Виноград</div>
+                      </div>
+                      <div class="composition__weight">25 г</div> 
+                    </div>
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="nut composition__icon">
+                            <use xlink:href="./icons/sprite.svg#nut"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Грецкий орех</div>
+                      </div>
+                      <div class="composition__weight">32 г</div>
+                    </div>
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="almond composition__icon">
+                            <use xlink:href="./icons/sprite.svg#almond"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Кунжутное семя</div>
+                      </div>
+                      <div class="composition__weight">20 г</div> 
+                    </div>
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="milk composition__icon">
+                            <use xlink:href="./icons/sprite.svg#milk"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Сухое молоко</div>
+                      </div>
+                      <div class="composition__weight">10 г</div> 
+                    </div>
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="honey composition__icon">
+                            <use xlink:href="./icons/sprite.svg#honey"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Замю сахара</div>
+                      </div>
+                      <div class="composition__weight">4 г</div>
+                    </div>
+                    <div class="composition__line">
+                      <div class="composite__line-right">
+                        <span class="composition__img"> 
+                          <svg class="cacao composition__icon">
+                            <use xlink:href="./icons/sprite.svg#cacao"></use>
+                          </svg>
+                        </span>
+                        <div class="composition__text">Какао бобы</div>
+                      </div>
+                      <div class="composition__weight">4 г</div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              
               <div class="right-bar__title">
-                <h2 class="section__title title-bar">Батончик “Гранола 
-                  виноград”</h2>
+                <h2 class="section__title title-bar">Батончик “Гранола виноград”</h2>
               </div>
               <div class="right-bar__desc">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
-              <ul class="right-bar__info">
+              <ul class="info__list">
                 <li class="info__item">
                   <div class="kcal">Калорийность</div>
-                  <div class="kcal__weight">110 ккал</div>
+                  <div class="kcal__weight weight">110 ккал</div>
                 </li>
                 <li class="info__item">
                   <div class="mg">Вес</div>
-                  <div class="mg__weight">95 грамм</div>
+                  <div class="mg__weight weight">95 грамм</div>
                 </li>
               </ul>
-              <div class="right-bar-price">
-                <div class="price">140 ₽</div>
+              <div class="bar-price">
+                <div class="bar-price__money">140 ₽</div>
                 <button type="submit" value="Заказать" class="btn btn_theme_green">Заказать</button>
               </div>
             </div>
-          </div>
-          <div class="right__image-wrapper">
-          <span class="right__icon"> 
-            <svg class="right-ship-icon">
-              <use xlink:href="./icons/sprite.svg#ship"></use>
-            </svg>
-          </span>
+            <div class="right__ship-wrapper">
+                <span class="right__icon"> 
+                  <svg class="right-ship-icon">
+                    <use xlink:href="./icons/sprite.svg#ship"></use>
+                  </svg>
+                </span>
+            </div>
           </div>
         </div>
       </section>
@@ -222,7 +292,7 @@
               </div>
             </div>
             <div class="link link-active">
-              <div class="prev"></div>
+            <div class="prev"></div>      
               <div class="full_content">
                 <div class="full">
                   <div class="menu__desc">Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. 
@@ -407,7 +477,7 @@
         </div>
       </footer>
     </div>
-  </div>  
+  </div> 
   <nav class="fixed-menu">
     <div class="fixed-menu__display">
       <ul class="fixed-menu__list">
