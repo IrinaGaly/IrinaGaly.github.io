@@ -9,13 +9,13 @@
   display: none;
 
 
-&.error-modal {
-  .modal__content {
-    color: red;
-  }
+// &.error-modal {
+//   .modal__content {
+//     color: red;
+//   }
 }
 
-&.fancybox-content {
+.modal .fancybox-content {
   padding: 0 !important;
 }
 
@@ -23,10 +23,6 @@
   display: none;
 }
 
-}
-.input-error {
-  color: red;
-}
 .modal__container {
   background: #ffffff;
   padding: rem(35px) rem(60px);
@@ -36,9 +32,12 @@
   justify-content: center;
 }
 
+.input-error {
+  border: rem(3px) solid hotpink;
+}
+
 .modal__content {
   margin-bottom: rem(15px);
   color: #000000;
-  margin-bottom: rem(25px);
 }
 

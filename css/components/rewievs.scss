@@ -84,6 +84,7 @@
 .rewievs__content {
   flex: 1;
   margin-left: rem(20px);
+  min-height: rem(317px);
 
   @include tablets {
     text-align: center;

@@ -136,7 +136,6 @@ footer {
   justify-content: space-between;
   height: 100%;
   padding: 1.3333333333rem 0 2.5rem;
-  width: 940px;
   margin: 0 auto;
 }
 @media screen and (max-width: 769px) {
@@ -200,7 +199,7 @@ footer {
 }
 
 .nav {
-  margin: 0 20px;
+  margin: 0 1.1111111111rem;
   padding-top: 5px;
 }
 @media screen and (max-width: 769px) {
@@ -218,7 +217,7 @@ footer {
 
 .nav__item {
   margin-right: 0.8888888889rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
 }
 .nav__item:last-child {
   margin-right: 0;
@@ -318,11 +317,11 @@ footer {
 }
 
 .section {
-  height: 100vh;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 42.8333333333rem;
 }
 
 .section__title {
@@ -548,6 +547,7 @@ footer {
 .rewievs__content {
   flex: 1;
   margin-left: 1.1111111111rem;
+  min-height: 17.6111111111rem;
 }
 @media screen and (max-width: 769px) {
   .rewievs__content {
@@ -578,7 +578,7 @@ footer {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: none;
+  border: 0.2777777778rem solid transparent;
 }
 .interactive-feedback:hover {
   border: 0.2777777778rem solid #0f5a47;
@@ -873,7 +873,7 @@ footer {
 
 .section__map {
   min-height: 653px;
-  background: url("/images/map.png") center center/100% no-repeat;
+  background: url("../images/map.png") center center/100% no-repeat;
 }
 
 .footer {
@@ -1017,7 +1017,7 @@ footer {
 }
 
 .menu__left-side {
-  background: url("/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
+  background: url("../images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
   transform: rotate(-90deg);
   height: 100%;
   width: 101 px/18px0rem;
@@ -1050,7 +1050,7 @@ footer {
   width: 10%;
   height: 100%;
   color: #aaa;
-  background: url("/images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
+  background: url("../images/kokosovoe-maslo-dlya-zdorovya-i-krasoty.png") top center/100% no-repeat;
   background-size: cover;
   overflow: hidden;
   cursor: pointer;
@@ -1108,7 +1108,7 @@ footer {
 }
 
 .section-menu {
-  background: url("/images/картинка.png") 100% 100% no-repeat;
+  background: url("../images/картинка.png") 100% 100% no-repeat;
   position: relative;
   background-size: cover;
 }
@@ -1123,14 +1123,14 @@ footer {
     top: 0;
     left: 0;
     padding: 8.1111111111rem 8.2777777778rem;
-    font-size: rem 16px;
+    font-size: 2rem;
   }
 
   .nav-close {
-    background: url("/icons/close.svg");
+    background: url("../icons/close.svg");
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 0.5555555556rem;
+    height: 0.5555555556rem;
     top: 3%;
     right: 5%;
   }
@@ -1138,6 +1138,9 @@ footer {
   .nav__list {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 25.5rem;
   }
 }
 .bar {
@@ -1303,7 +1306,7 @@ footer {
 }
 
 .section-bars::before {
-  content: url("/images/leaf-berry.png");
+  content: url("../images/leaf-berry.png");
   position: absolute;
   height: 25.1666666667rem;
   width: 10.8888888889rem;
@@ -1446,7 +1449,7 @@ footer {
 @media screen and (max-width: 769px) {
   .members__item {
     margin-right: 0;
-    width: 242px;
+    width: 13.4444444444rem;
   }
 }
 
@@ -1516,7 +1519,7 @@ footer {
 }
 @media screen and (max-width: 769px) {
   .members__info-wrapper {
-    height: 409px;
+    height: 22.7222222222rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1543,13 +1546,12 @@ footer {
   display: flex;
   display: none;
 }
-.modal.error-modal .modal__content {
-  color: red;
-}
-.modal.fancybox-content {
+
+.modal .fancybox-content {
   padding: 0 !important;
 }
-.modal .fancybox-button {
+
+.fancybox-button {
   display: none;
 }
 
@@ -1564,10 +1566,16 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+=======
+}
+
+.input-error {
+  border: 0.1666666667rem solid hotpink;
+>>>>>>> hw4
 }
 
 .modal__content {
   margin-bottom: 0.8333333333rem;
   color: #000000;
-  margin-bottom: 1.3888888889rem;
 }
