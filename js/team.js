@@ -38,22 +38,24 @@ const container = item.closest(".members__item");
 const contentBlock = container.find(".members__info");
 const textBlock = contentBlock.find(".members__info-wrapper");
 const reqHeight = textBlock.height();
-const triangleActive = contentBlock.find(".members__triangle");
-
+const triangleActive = item.find(".members__triangle");
 
 container.addClass("active");
 contentBlock.height(reqHeight);
+triangleActive.addClass("members__triangle_active");
 
 }
 
-const closeEveryItem = container => {
+  const closeEveryItem = container => {
   const items = container.find(".members__info");
   const itemContainer = container.find(".members__item");
   const itemTriangle = container.find(".members__triangle");
+  
 
   
   itemContainer.removeClass("active");
   items.height(0);
+  itemTriangle.removeClass("members__triangle_active");
 }
 
 $('.members__link').click(e => {

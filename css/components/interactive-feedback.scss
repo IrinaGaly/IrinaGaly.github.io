@@ -4,8 +4,8 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: none;
-
+  //border: none;
+  border: rem(5px) solid transparent;
   &:hover {
     border: rem(5px) solid #0f5a47;
     border-radius: 50%;

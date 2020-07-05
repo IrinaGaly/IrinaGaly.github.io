@@ -32,7 +32,7 @@
 
   @include tablets {
     margin-right: 0;
-    width: 242px;
+    width: rem(242px);
   }
 }
 // .active {
@@ -120,7 +120,7 @@
   height: rem(150px);
 
    @include tablets {
-    height: 409px;
+    height: rem(409px);
     display: flex;
     flex-direction: column;
     justify-content: center;
