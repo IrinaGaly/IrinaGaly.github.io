@@ -5,10 +5,15 @@
   overflow: hidden;
   position: relative;
   border: none;
+
+  &:hover {
+    border: rem(5px) solid #0f5a47;
+    border-radius: 50%;
+  }
 }
 
 .interactive-feedback_active {
-  border: rem(6px) solid #0f5a47;
+  border: rem(5px) solid #0f5a47;
   border-radius: 50%;
 }
 
@@ -31,6 +36,8 @@
 .rewievs__switcher {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+
 }
 .rewievs__switcher-item {
   margin-right: rem(8px);

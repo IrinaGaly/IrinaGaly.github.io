@@ -24,7 +24,7 @@
   align-items: center;
   position: absolute;
   top: 50%;
-  left: -10%; 
+  left: -1%; 
 
   @include tablets {
   top: 50%;
@@ -38,7 +38,7 @@
   align-items: center;
   position: absolute;
   top:50%;
-  right: -10%;
+  right: -1%;
 
   @include tablets {
     top: 50%;

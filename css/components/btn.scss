@@ -38,5 +38,23 @@
       }
 
     }
+
+    &-bars {
+      background: #365A49;
+      color: white;
+    
+      &:hover {
+        background: $darkGreen;
+      }
+    }
 }
+
+// .btn-bars {
+//   background: #365A49;
+//   color: white;
+
+//   &:hover {
+//     background: $darkGreen;
+//   }
+// }
 

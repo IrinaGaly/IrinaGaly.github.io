@@ -3,14 +3,25 @@
   justify-content: space-between;
    
   @include tablets {
-    flex-direction: column;
-    padding: 10% 8%;
+  flex-direction: column;
+  padding: rem(95px) 0 rem(122px) 0;
   }
 
   @include phones {
-    padding: rem(85px) 0 rem(112px) 0;
+  padding: rem(85px) 0 rem(112px) 0;
   }
 }
+
+
+
+.bx-wrapper {
+  box-shadow: none; 
+  border: none; 
+  background: transparent; 
+}
+// .bar-deactive {
+//   display: none;
+// }
 .right-bar {
   width: 50%;
   display: flex;
@@ -19,12 +30,12 @@
   position: relative;
 
   @include tablets {
-    width: auto;
-    text-align: center;
-    margin-left: 0;
-    justify-content: center;
-    align-items: center;
-  }
+  width: auto;
+  text-align: center;
+  margin-left: 0;
+  justify-content: center;
+  align-items: center;
+   }
 }
 
 .left-bar {
@@ -34,8 +45,8 @@
   align-items: center;
 
   @include tablets {
-    width: auto;
-    margin-bottom: rem(28px);
+  width: 100%; //bylo auto
+  margin-bottom: rem(28px);
   }
 }
 
@@ -44,20 +55,21 @@
   min-height: rem(424px);
 
   @include tablets {
-    width: rem(370px);
-    height: rem(337px);
-    object-fit: cover;
-  }
+  width: rem(370px);
+  height: rem(337px);
+  object-fit: cover;
+   }
 
   @include phones {
-    width: rem(370px);
-    height: rem(304px);
-    object-fit: cover;
+  width: rem(370px);
+  height: rem(304px);
+  object-fit: cover;
   }
 }
 
 .right-bar__icon {
-  background: url('/images/blue.png');
+  background: rgb(134, 195, 215);
+  border-radius: 5px;
   width: 91px;
   height: 91px;
   display: flex;
@@ -69,15 +81,22 @@
 
    &:hover {
      cursor: pointer;
+     background: rgb(96, 170, 204);
    }
 
    @include tablets {
-     display: block;
-     display: none;
+   display: block;
+   display: none;
    }
 }
-.cocolate__desc {
+.right__icon-chocolate {
+  display: flex;
+  flex-direction: column;
   color: white;
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .title-bar {
@@ -87,8 +106,8 @@
   text-align: start;
 
   @include tablets {
-    font-size: rem(30px);
-    text-align: center;
+  font-size: rem(30px);
+  text-align: center;
   }
 }
 
@@ -96,7 +115,7 @@
   margin-bottom: rem(43px);
 
   @include phones {
-    padding: 0 rem(55px);
+  padding: 0 rem(55px);
   }
 }
 
@@ -108,9 +127,9 @@
 .info__item {
   margin: 0 rem(55px) rem(52px) 0;
 
-  @include tablets {
-    margin-bottom: rem(40px);
-  }
+   @include tablets {
+   margin-bottom: rem(40px);
+   }
 }
 .weight {
   font-weight: bold;

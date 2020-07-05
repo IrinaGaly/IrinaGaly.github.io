@@ -21,7 +21,7 @@ $z-fixed-menu: 100;
 @import url("normalize.css");
 
 //setup
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap'); 
 @import "layout";
 
 //components 
@@ -52,5 +52,7 @@ $z-fixed-menu: 100;
 @import "components/bar-slider";
 @import "components/section-bar";
 @import "components/composition";
+@import "components/team";
+@import "components/modal";
 
 
