@@ -1555,10 +1555,6 @@ footer {
   display: none;
 }
 
-.input-error {
-  color: red;
-}
-
 .modal__container {
   background: #ffffff;
   padding: 1.9444444444rem 3.3333333333rem;
@@ -1566,13 +1562,10 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-=======
 }
 
 .input-error {
   border: 0.1666666667rem solid hotpink;
->>>>>>> hw4
 }
 
 .modal__content {
