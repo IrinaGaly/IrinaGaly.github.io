@@ -1,9 +1,9 @@
 .section__order {
   background: url('../images/паттерн.png') center center / 100%;
 
-  @include tablets {
-  height: fit-content;
-  }
+  //@include tablets {
+  //height: fit-content;
+  //}
 }
 
 .title__order {

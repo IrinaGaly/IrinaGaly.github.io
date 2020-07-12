@@ -2,7 +2,7 @@ $containerWidth: 940px;
 $baseFontSize: 18px;
 
 //breackpoints 
-$tablets: 769px;
+$tablets: 768px;
 $phones: 480px;
 
 
@@ -25,7 +25,7 @@ $z-fixed-menu: 100;
 @import "layout";
 
 //components 
-@import "components/hero";
+@import "components/section-hero";
 @import "components/header";
 @import "components/badges";
 @import "components/btn";
@@ -33,10 +33,10 @@ $z-fixed-menu: 100;
 @import "components/headline";
 @import "components/becauses";
 @import "components/because";
-@import "components/becauses-section";
+@import "components/section-becauses";
 @import "components/rewievs";
 @import "components/interactive-feedback";
-@import "components/rewievs-section";
+@import "components/section-rewievs";
 @import "components/section-order";
 @import "components/form";
 @import "components/radio";
@@ -47,12 +47,12 @@ $z-fixed-menu: 100;
 @import "components/sprite";
 @import "components/social";
 @import "components/menu";
-@import "components/menu-section";
+@import "components/section-menu";
 @import "components/gamburger";
 @import "components/bar-slider";
 @import "components/section-bar";
 @import "components/composition";
 @import "components/team";
 @import "components/modal";
-
-
+@import "components/player";
+@import "components/section-player";

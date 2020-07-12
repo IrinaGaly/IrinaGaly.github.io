@@ -13,13 +13,13 @@ html {
   }
 }
 
-
 html, 
 body {
   height: 100%;
 }
 
 body {
+  width: 100%;
   font-family: 'Alegreya Sans', sans-serif;
   line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
@@ -28,12 +28,23 @@ body {
   color: #666666;
 }
 
+section {
+   //height: 100vh;
+ }
+
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
 .container {
   width: 95%;
   max-width: $containerWidth;
@@ -69,10 +80,11 @@ a {
 ul {
 	padding: rem(0px);
   margin: rem(0px);
-  li {
-    list-style: none;
-    }
-	}
+
+li {
+  list-style: none;
+  }
+}
 
 img {
 	display: block;

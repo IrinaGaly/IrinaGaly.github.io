@@ -7,37 +7,60 @@
   @include tablets {
     display: none;
   }
+  }
+.fixed-menu__link {
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border:  1px solid transparent;
+  display: block;
+  position: relative;
 
-   &__item {
-  
-     margin-bottom: 5px;
-
-    &_active {
-      .fixed-menu__link {
-        border-color: white;
-      }
+  &::before {
+    content: "";
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
     }
-   }
+  }
 
-   &__link {
-     width: rem(16px);
-     height: 16px;
-     border-radius: 50%;
-     border:  1px solid transparent;
-     display: block;
-     position: relative;
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
 
-      &::before {
-        content: "";
-        display: block;
-        width: 6px;
-        height: 6px;
-        background: white;
-        border-radius: 50%;
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, 50%);
-      }
-   }
+.fixed-menu__link:hover {
+  border-color: white;
+}
+
+.fixed-menu__link_active  {
+  border-color: white;
+} 
+  
+
+.fixed-menu__link-shadow {
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border:  1px solid transparent;
+  display: block;
+  position: relative; 
+
+  &::before {
+  content: "";
+  display: block;
+  width: rem(6px);
+  height: rem(6px);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  }
 }

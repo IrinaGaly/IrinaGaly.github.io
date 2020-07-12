@@ -66,3 +66,32 @@
   width: 35px;
   height: 35px;
 }
+
+.play-start__icon {
+  width: rem(82px);
+  height: rem(118px);
+  fill: white;
+  opacity: 0.9019607843137255;
+
+  @include tablets {
+    width: rem(73px);
+    height: rem(106px);
+  }
+
+  @include phones {
+    width: rem(49px);
+    height: rem(71px);
+  }
+}
+
+.playback__icon {
+  width: rem(16px);
+  height: rem(22px);
+  fill: #626262;
+}
+
+.volume__icon {
+  width: rem(18px);
+  height: rem(22px);
+  fill: #626262;
+}
